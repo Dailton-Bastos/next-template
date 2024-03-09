@@ -1,7 +1,13 @@
 {
   "name": "next-template",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "Initial structure for any Next.js application",
+  "author": "Dailton Bastos <dailtonbastos@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dailton-Bastos/next-template"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
