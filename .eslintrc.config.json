@@ -1,0 +1,45 @@
+{
+	"parser": "@typescript-eslint/parser",
+	"plugins": [
+		"@typescript-eslint",
+		"eslint-plugin-import-helpers",
+		"only-warn"
+	],
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"prettier"
+	],
+	"rules": {
+		"no-console": "warn",
+		"@typescript-eslint/no-use-before-define": "error",
+		"react/jsx-filename-extension": [
+			"error",
+			{
+				"extensions": [".tsx"]
+			}
+		],
+		"import/no-duplicates": [
+			"error",
+			{
+				"considerQueryString": true
+			}
+		],
+		"import-helpers/order-imports": [
+			"warn",
+			{
+				"newlinesBetween": "always",
+				"groups": [
+					["/^react/"],
+					["module"],
+					["/^~//"],
+					["parent", "sibling", "index"]
+				],
+				"alphabetize": {
+					"order": "asc",
+					"ignoreCase": true
+				}
+			}
+		]
+	}
+}
