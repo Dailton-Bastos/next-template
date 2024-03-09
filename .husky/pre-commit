@@ -1,0 +1,9 @@
+echo '[pre-commit] This may take a while...'
+
+npx --no-install lint-staged || (
+    echo '🚫 Yoo, you have a problem in your code.
+          Fix, save changes and try commit again.';
+    false;
+)
+
+echo 'No errors found: committing this now...🚀'
