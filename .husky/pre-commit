@@ -1,8 +1,8 @@
 echo '[pre-commit] This may take a while...'
 
 npx --no-install lint-staged || (
-    echo '🚫 Yoo, you have a problem in your code.
-          Fix, save changes and try commit again.';
+    echo '🚫 Ooops! next lint --fix found some errors.
+          Please fix them and try committing again';
     false;
 )
 
