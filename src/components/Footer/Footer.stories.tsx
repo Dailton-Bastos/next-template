@@ -1,4 +1,4 @@
-import {Footer} from '.'
+import { Footer } from '.'
 
 const config = {
 	title: 'Footer',
@@ -13,6 +13,6 @@ const Default = {
 	args: {},
 }
 
-export {Default}
+export { Default }
 
 export default config
