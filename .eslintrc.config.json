@@ -3,7 +3,8 @@
 	"plugins": [
 		"@typescript-eslint",
 		"eslint-plugin-import-helpers",
-		"only-warn"
+		"only-warn",
+		"validate-filename"
 	],
 	"extends": [
 		"eslint:recommended",
@@ -40,6 +41,32 @@
 					"order": "asc",
 					"ignoreCase": true
 				}
+			}
+		],
+		"validate-filename/naming-rules": [
+			"error",
+			{
+				"rules": [
+					{
+						"case": "pascal",
+						"target": "**/components/**"
+					},
+					{
+						"case": "kebab",
+						"target": "**/app/**",
+						"patterns": "^(page|layout|loading|error|not-found|route|template).tsx$"
+					},
+					{
+						"case": "camel",
+						"target": "**/hooks/**",
+						"patterns": "^use"
+					},
+					{
+						"case": "camel",
+						"target": "**/providers/**",
+						"patterns": "^[a-zA-Z]*Provider"
+					}
+				]
 			}
 		]
 	},

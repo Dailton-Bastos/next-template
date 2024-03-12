@@ -103,6 +103,9 @@ devDependencies:
   eslint-plugin-storybook:
     specifier: ^0.8.0
     version: 0.8.0(eslint@8.57.0)(typescript@5.4.2)
+  eslint-plugin-validate-filename:
+    specifier: ^0.0.4
+    version: 0.0.4(eslint@8.57.0)
   husky:
     specifier: ^9.0.11
     version: 9.0.11
@@ -6700,6 +6703,17 @@ packages:
     transitivePeerDependencies:
       - supports-color
       - typescript
+    dev: true
+
+  /eslint-plugin-validate-filename@0.0.4(eslint@8.57.0):
+    resolution: {integrity: sha512-K3IDwvWIVPqOJCdYcnxQg2e9sOcr8nNmxCN6d1i84Fp2K2rnDiy+/lszW6cVAqxO91kuEcmpQppg7Ph4UmrXvw==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      eslint: '>=7.0.0 <9.0.0'
+    dependencies:
+      eslint: 8.57.0
+      micromatch: 4.0.5
+      typescript: 5.4.2
     dev: true
 
   /eslint-scope@5.1.1:
